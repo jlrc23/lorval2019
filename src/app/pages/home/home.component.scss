@@ -1,0 +1,53 @@
+main{
+    display: grid;
+    height: calc(100vh - 90px);
+    width:  calc(100vw - 60px);
+    margin: auto;
+    padding-top: 10px;
+}
+
+
+footer{
+    height: 60px;
+    background: url("images/footer.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    background: #06038D;
+    height: 30px;
+    width: 100vw;
+}
+
+
+#logoICAAI{
+    max-height: calc( (100vh - 120px) / 2);
+    display: block;
+    margin: auto;
+}
+
+img.empresas{
+    width: 100%;
+    height: auto;
+
+}
+
+section.empresas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.empresas div {
+    border:1px solid black;
+}
+section.empresas div.top{
+    align-self: flex-start;
+}
+
+
+section.empresas div.bottom{
+    align-self:  flex-end;
+}
+
