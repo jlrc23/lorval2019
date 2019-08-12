@@ -1,0 +1,102 @@
+main{
+    display: grid;
+    height: calc(100vh - 90px);
+    width:  calc(100vw - 60px);
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: url("images/lines.gif");
+    background-position-x: center;
+    background-position-y: calc( 100vh / 2 - 100px);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+
+footer{
+    height: 60px;
+    background: url("images/footer.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    background: #06038D;
+    height: 30px;
+    width: 100vw;
+}
+
+
+#logoICAAI{
+    max-height: calc( (100vh - 120px) / 2);
+    max-width: 100%;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+.empresaPrincipal{
+    padding-bottom:40px;
+}
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 900px) {
+    header{
+        height: 10px;
+    }
+    main{
+        background: none;
+        padding-top: 2px;
+        padding-bottom: 0px;
+        height: calc(100vh - 30px);
+    }
+
+    col{
+        padding:20px 10px;
+    }
+    footer{
+        height: 20px;
+        background: url("images/footer.png");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+    
+
+}
+@media (max-width: 580px) {
+    img.empresas{
+        width: 60%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+
+    }
+}
+/**
+
+
+
+
+
+section.empresas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section.empresas div {
+}
+
+section.empresas div.top{
+    align-self: flex-start;
+    padding: 20px 60px;
+
+}
+
+
+section.empresas div.bottom{
+    align-self:  flex-end;
+    padding: 0px 60px 40px 60px;
+}
+
+**/

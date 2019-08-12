@@ -14,7 +14,7 @@ export class AppComponent {
     this.config = {
       // fullpage options
       licenseKey: 'F0C98BD8-1E5C4649-89CD41BD-6DB81FC1',
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+      anchors: ['landing', 'home', 'aboutUs', 'services', 'contactUs'],
       menu: '#menu',
       // fullpage callbacks
       afterResize: () => {

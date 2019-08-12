@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(~fullpage.js/dist/fullpage.min.css);
+@font-face{
+    font-family: "Eras";
+    src: url("assets/fonts/ERASM.TTF");
+}
+*{
+    font-family: "Eras";
+    color: #06038D;
+    font-size: 1.05em;
+}
+img{
+    width: 100%;
+    height: auto;
+}

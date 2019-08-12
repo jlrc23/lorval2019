@@ -1,53 +1,59 @@
-main{
-    display: grid;
-    height: calc(100vh - 90px);
-    width:  calc(100vw - 60px);
-    margin: auto;
-    padding-top: 10px;
-}
-
-
-footer{
-    height: 60px;
-    background: url("images/footer.png");
-    background-size: cover; 
+:host  {
+    display: block;
+    background-image: url("images/backgroundStrong.png");
+    background-position-x: right;
+    background-position-y: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-header{
-    background: #06038D;
-    height: 30px;
+    background-size: auto 100%;
+    height: 100vh;
     width: 100vw;
 }
 
 
-#logoICAAI{
-    max-height: calc( (100vh - 120px) / 2);
+
+.slider1{
+    background: url("images/imgPersona.png");
+    background-repeat: no-repeat;
+}
+.slider2{
+    background: url("images/imgPlanos.png");
+    background-repeat: no-repeat;
+}
+.slider1, .slider2{
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    background-size: 100% 100%;
+}
+
+section.slider{
     display: block;
-    margin: auto;
+    max-height: 30vh;
 }
 
-img.empresas{
-    width: 100%;
-    height: auto;
+section.mainMenu{
+    display: block;
+    padding-top: 15vh;
+    max-height: 33vh;
+
 
 }
 
-section.empresas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+header{
+    display: flex;
+    max-height: 30vh;
+    padding: 5vh 3vw 5vh 5vw;
+
 }
 
-section.empresas div {
-    border:1px solid black;
-}
-section.empresas div.top{
-    align-self: flex-start;
+header .logo{
+    max-width:  45vw;
+    background: rgba(255,255,255, 0.5);
 }
 
 
-section.empresas div.bottom{
-    align-self:  flex-end;
+@media (max-width: 768px) {
+    header .logo{
+        width: 100vw;
+        max-height: 30vh;
+    }
 }
-

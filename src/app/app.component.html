@@ -1,13 +1,15 @@
 <!-- app.component.html -->
 <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
   <div class="section">
-		<app-home></app-home>
+		<app-landing></app-landing>
   </div>
-	<div class="section" (click)="fullpage_api.moveSectionDown()">Some section2</div>
+	<div class="section" (click)="fullpage_api.moveSectionDown()">
+		<app-home></app-home>
+	</div>
 	<div class="section">
 		<div style="background-color: lightblue;" class="slide">Slide 2.1</div>
 		<div style="background-color: lightcyan;" class="slide">Slide 2.2</div>
 		<div style="background-color: lightgreen" class="slide">Slide 2.3</div>
 	</div>
-	<div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
+	<div class="section" (click)="fullpage_api.moveTo('home', 2)">Some section4</div>
 </div>
