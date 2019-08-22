@@ -2,14 +2,166 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
 @font-face{
     font-family: "Eras";
-    src: url("assets/fonts/ERASM.TTF");
+    src: url("assets/fonts/ERASM.eot");
+    src: url('assets/fonts/ERASM.eot?#iefix') format('embedded-opentype'),
+         url("assets/fonts/ERASM.svg") format('svg'),
+         url('assets/fonts/ERASM.woff') format('woff'),
+         url('assets/fonts/ERASM.woff2') format('woff2'),
+         url("assets/fonts/ERASM.otf") format("opentype"), /* Open Type Font */
+         url("assets/fonts/ERASM.TTF") format('truetype');
+    font-weight: bold;
+    font-style: bold;
+    -webkit-font-smoothing: antialiased; /* Looks pretty much the same than Windows */
+    transform: rotate(-0.0000000001deg);
+    font-smooth: always;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    text-shadow: 0 0 1px rgba(51,51,51,0.2); // find your own color/alpha settings
+    text-rendering: optimizeLegibility; 
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    -webkit-font-smoothing: subpixel-antialiased !important; //more fatty in safari
+     text-rendering: geometricPrecision !important; //more fatty in safari
 }
+
+@font-face{
+    font-family: "ErasB";
+    src: url("assets/fonts/ERASB.TTF");
+}
+@font-face{
+    font-family: "Eras";
+    src: url("assets/fonts/ERASL.eot");
+    src: url('assets/fonts/ERASL.eot?#iefix') format('embedded-opentype'),
+         url("assets/fonts/ERASL.svg") format('svg'),
+         url('assets/fonts/ERASL.woff') format('woff'),
+         url('assets/fonts/ERASL.woff2') format('woff2'), /* Super Modern Browsers */
+         url("assets/fonts/ERASL.otf") format("opentype"), /* Open Type Font */
+         url("assets/fonts/ERASL.TTF") format('truetype');
+    font-style: normal;
+    font-weight:normal;
+
+    -webkit-font-smoothing: none; /* Looks very thin and awful */
+    font-smooth: always;
+    transform: rotate(-0.0000000001deg);
+    text-shadow: 0 0 1px rgba(0,0,0,0.3);
+    text-rendering: optimizeLegibility;
+}
+
 *{
     font-family: "Eras";
     color: #06038D;
-    font-size: 1.05em;
+    font-size: 1.035em;
+}
+body a, body a:hover{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+title, h1,h2,h3,h4,h5,h6{
+    font-family: "Eras";
+    font-weight: bold;
+}
+title.bold, h1.bold,h2.bold,h3.bold,h4.bold,h5.bold,h6.bold{
+    font-family: "ErasB";
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.17em;
 }
 img{
     width: 100%;
     height: auto;
+}
+html, body { 
+    height: 100%;
+}
+
+body { 
+    margin: 0; 
+    font-family: Eras, Roboto, "Helvetica Neue", sans-serif; 
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: geometricPrecision;
+}
+
+nav{
+    background: rgba(255,255,255, 0.5);
+    
+   & > ul{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+    & > ul li{
+        list-style-type: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    & > ul li:hover{
+        border-bottom: 1px solid #06038D;
+    }
+    @media (max-width: 768px) {
+        & > ul{
+            width: 100%;
+        }
+
+    }
+}
+
+
+
+
+
+/* the fix ! simply ADD this block BELOW the above block */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'Eras';
+        src: url("assets/fonts/ERASM.svg") format('svg');
+        font-weight: bold;
+        font-style: bold;
+    }
+    @font-face {
+        font-family: 'Eras';
+        src: url("assets/fonts/ERASL.svg") format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@media screen and (orientation:landscape ) and (max-width:767px) { 
+    img{
+        max-width: 30vw;
+    }
+    *{
+        font-size: 0.95em;
+    }
+    h1{
+        font-size: 1.7em;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 768px) {
+    *{
+        font-size: 1em;
+    }
 }

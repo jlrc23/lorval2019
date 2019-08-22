@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MnuAboutUsComponent } from './components/mnu-about-us/mnu-about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    AboutUsComponent,
+    MnuAboutUsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

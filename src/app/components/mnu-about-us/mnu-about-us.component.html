@@ -1,0 +1,10 @@
+<nav>
+    <ul>
+      <li [ngClass]="{'selected': itemSelected=='mision'}" 
+        (click)="selectOption('mision')">
+        MISION
+      </li>
+      <li [ngClass]="{'selected': itemSelected=='vision'}" 
+      (click)="selectOption('vision')">VISION</li>
+    </ul>
+  </nav>
