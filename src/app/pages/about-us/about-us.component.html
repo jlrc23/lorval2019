@@ -1,48 +1,50 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12 col-md-8 col-xl-5">
-        <img  src="/assets/images/imgPlanos.jpg" alt="">
+<div class="wrapperWatermark">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-8 col-xl-5">
+          <img  src="/assets/images/imgPlanos.jpg" alt="">
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-md-7 col-xl-5">
-      <h1>Nosotros</h1>
-      <p>
-          Somos un grupo de profesionistas con larga experiencia y capacidad técnica en cada una de las áreas de la industria de la construcción de toda clase de obras de ingeniería y arquitectura, tanto en obras públicas como privadas
-      </p>
-    </div>
-    <div class="col-5 d-none d-md-block" [ngSwitch]="selectedOption">
-      <div class="boxMessage" *ngSwitchCase="'mision'">
-        <h3>Mision</h3>
+    <div class="row">
+      <div class="col-12 col-md-7 col-xl-5">
+        <h1>Nosotros</h1>
         <p>
-            Ser una empresa que provee soluciones que garantizan resultados de alto impacto, tangibles y perdurables a sus clientes. 
+            Somos un grupo de profesionistas con larga experiencia y capacidad técnica en cada una de las áreas de la industria de la construcción de toda clase de obras de ingeniería y arquitectura, tanto en obras públicas como privadas
         </p>
       </div>
-      <div class="boxMessage" *ngSwitchCase="'vision'">
-        <h3>Vision</h3>
-        <p> Somos una empresa empeñada en lograr los más altos estándares de calidad y confianza en:</p>
-            <ul>
-              <li>Ser la opción preferente de nuestros clientes en nuestro mercado objetivo.
-              </li>
-              <li>Proporcionar al sector público y privado la gama de servicios que demandan los programas de inversión, facilitando su control y proponiendo soluciones.
-              </li>
-              <li>
-                  Ofrecer al sector privado la asesoría y realización de sus proyectos, desde su conceptualización hasta su comercialización y ocupación final.
-              </li>
-            </ul>
-  
+      <div class="col-5 d-none d-md-block" [ngSwitch]="selectedOption">
+        <div class="boxMessage" *ngSwitchCase="'mision'">
+          <h3>Mision</h3>
+          <p>
+              Ser una empresa que provee soluciones que garantizan resultados de alto impacto, tangibles y perdurables a sus clientes. 
+          </p>
+        </div>
+        <div class="boxMessage" *ngSwitchCase="'vision'">
+          <h3>Vision</h3>
+          <p> Somos una empresa empeñada en lograr los más altos estándares de calidad y confianza en:</p>
+              <ul>
+                <li>Ser la opción preferente de nuestros clientes en nuestro mercado objetivo.
+                </li>
+                <li>Proporcionar al sector público y privado la gama de servicios que demandan los programas de inversión, facilitando su control y proponiendo soluciones.
+                </li>
+                <li>
+                    Ofrecer al sector privado la asesoría y realización de sus proyectos, desde su conceptualización hasta su comercialización y ocupación final.
+                </li>
+              </ul>
+    
+        </div>
+
       </div>
 
     </div>
 
+    <div class="row">
+        <div class="col-12 col-md-8 col-xl-5">
+            <mnu-about-us (selected)="menuSelect($event)" ></mnu-about-us>
+        </div>
+      </div>
+    <p>
+    </p>
+    
   </div>
-
-  <div class="row">
-      <div class="col-12 col-md-8 col-xl-5">
-          <mnu-about-us (selected)="menuSelect($event)" ></mnu-about-us>
-      </div>
-    </div>
-  <p>
-  </p>
-  
 </div>

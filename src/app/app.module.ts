@@ -10,6 +10,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MnuAboutUsComponent } from './components/mnu-about-us/mnu-about-us.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MnuAboutUsComponent } from './components/mnu-about-us/mnu-about-us.comp
     HomeComponent,
     MenuComponent,
     AboutUsComponent,
-    MnuAboutUsComponent
+    MnuAboutUsComponent,
+    ServicesComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
