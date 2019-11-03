@@ -1,6 +1,7 @@
 .mnuAside ul{
     display: flex;
     flex-direction: column;
+    background: none;
 }
 .selected{
     border-bottom: 1px solid #06038D;
