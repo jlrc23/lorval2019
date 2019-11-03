@@ -1,6 +1,10 @@
 <div class="wrapperWatermark">
     <div class="container-fluid">
-
+        <div class="row">
+            <div >
+                <img  style="height: 25vh; width:40vw;" src="/assets/photos/construction-engineer-in-hardhat-with-project.jpg" alt="">
+            </div>
+        </div>
         <div class="row">
           <div class="col-12 col-md-7 col-xl-5">
             <h1>Servicios</h1>
@@ -17,20 +21,51 @@
           </div>
         </div>
         <div class="row">
-          <aside class="col-4">
+          <aside class="col-6">
             <nav class="mnuAside" >
                 <ul class="">
-                    <li>Estudios y proyectps</li>
-                    <li>Consultoria de ingenieria de costos</li>
-                    <li>Coordinacion, supervision y control de obras</li>
-                    <li>Ejecución de obras</li>
+                    <li  [ngClass]="{'selected': selectedOption=='estudios-proyectos'}" >
+                      <a (click)="select_option('estudios-proyectos')">Estudios y proyectos</a>
+                    </li>
+                    <li  [ngClass]="{'selected': selectedOption=='consultoria'}" >
+                      <a (click)="select_option('consultoria')">Consultoria de ingenieria de costos</a>                        
+                    </li>
+                    <li  [ngClass]="{'selected': selectedOption=='coordinacion'}" >
+                      <a (click)="select_option('coordinacion')">Coordinacion, supervision y control de obras</a>
+                    </li>
+                    <li  [ngClass]="{'selected': selectedOption=='ejecucion'}" > 
+                      <a  (click)="select_option('ejecucion')">Ejecución de obras</a>
+                    </li>
                 </ul>
             </nav>
               
           </aside>
-          <div class="col-8">
+          
+          
+          <div class="col-5 d-md-block" ngClass="{'d-block':selectedOption, 'd-none': !selectedOption}" [ngSwitch]="selectedOption">
+              <div class="boxMessage" *ngSwitchCase="'estudios-proyectos'">
+                <h3>ESTUDIOS Y PROYECTOS</h3>
+                <p>
+                    Ser una empresa que provee soluciones que garantizan resultados de alto impacto, tangibles y perdurables a sus clientes. 
+                </p>
+              </div>
+              <div class="boxMessage" *ngSwitchCase="'consultoria'">
+                <h3>CONSULTORIA DE INGENIERÍA DE COSTOS</h3>
+                <p>Elaboración e integración de propuestas técnicas y económicas, análisis de precios unitarios, catálogo de conceptos, maquinaria, equipo y mano de obra, elaboración del factor de salario real, financiamiento, programación de obra, programación de conceptos y de insumos; así como la presentación y apertura de propuestas técnica y económica.</p>
+                <p>Apoyo técnico y legal en auditorias, inconformidades, elaboración de catálogos de conceptos y presupuestos base.</p>
+              </div>
+              <div class="boxMessage" *ngSwitchCase="'coordinacion'">
+                  <h3>COORDINACIÓN, SUPERVISIÓN Y CONTROL DE OBRAS</h3>
+                  <p>Coordinación, supervisión y control técnico-administrativo y de calidad, así como el control económico, considerando la revisión y autorización de concursos de obra pública y privada; la revisión, conciliación y autorización de precios unitarios extraordinarios, generadores, estimaciones, ajustes de costos (escalamientos), elaboración de reportes necesarios para la propia entidad y para el órgano de control interno y externo, hasta su total finiquito.</p>
+              </div>
 
-          </div>
+              <div class="boxMessage" *ngSwitchCase="'ejecucion'">
+                <h3>EJECUCIÓN DE OBRAS</h3>
+                <p>Se tiene la capacidad de ejecutar obras que van desde: terracerías, pavimentos, urbanizaciones, edificación; servicios de: agua potable, alcantarillado sanitario, alcantarillado pluvial; instalaciones eléctricas, alumbrado público, redes telefónicas, aire acondicionado, redes de voz y datos; así como obras de ingeniería ambiental como son: cárcamos de re- bombeo, cárcamos de tormentas, plantas de tratamiento de aguas residuales y tanque superficiales de agua potable.</p>
+              </div>
+
+
+          
         </div>
         
     </div>      

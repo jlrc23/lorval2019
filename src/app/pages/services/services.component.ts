@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./services.component.scss']
 })
 export class ServicesComponent implements OnInit {
+  selectedOption="estudios-proyectos" 
 
   constructor() { }
 
   ngOnInit() {
+
+  }
+  select_option(opt: string){
+    console.log(opt)
+    this.selectedOption = opt;
+    console.log("Selected value:", this.selectedOption)
   }
 
 }
