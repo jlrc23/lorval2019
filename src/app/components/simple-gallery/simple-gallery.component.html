@@ -1,0 +1,22 @@
+<div class="gallery-wrapper">
+  <div>
+      <button mat-mini-fab color="primary" (click)="previousPage()">
+        <mat-icon  aria-hidden="false" >navigate_before</mat-icon>
+      </button>
+  </div>
+  <div class="gallery">
+      <figure *ngFor="let ejecucion of paginaEjecuciones; let index= index"
+      class="gallery__item gallery__item--{{index}}"
+      (click)="openImage(ejecucion)"
+      >
+        <img src="{{imagePath(ejecucion.folder, ejecucion.image)}}" class=" gallery__img img-thumbnail">
+      </figure>
+  </div>
+  <div>
+      <button mat-mini-fab color="primary" (click)="nextPage()">
+        <mat-icon  aria-hidden="false" >navigate_next</mat-icon>
+      </button>
+  </div>
+
+
+</div>

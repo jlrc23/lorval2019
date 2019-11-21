@@ -1,3 +1,32 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$lorval2019-primary: mat-palette($mat-indigo);
+//$lorval2019-primary: mat-palette("·fff");
+$lorval2019-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$lorval2019-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$lorval2019-theme: mat-light-theme($lorval2019-primary, $lorval2019-accent, $lorval2019-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($lorval2019-theme);
+
 /* You can add global styles to this file, and also import other style files */
 @import url(~fullpage.js/dist/fullpage.min.css);
 @font-face{
@@ -17,7 +46,7 @@
     -webkit-font-smoothing: subpixel-antialiased;
     text-shadow: 0 0 1px rgba(0,0,0,0.3);
     text-shadow: 0 0 1px rgba(51,51,51,0.2); // find your own color/alpha settings
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
 
     -webkit-font-smoothing: subpixel-antialiased;
@@ -80,13 +109,13 @@ img{
     width: 100%;
     height: auto;
 }
-html, body { 
+html, body {
     height: 100%;
 }
 
-body { 
-    margin: 0; 
-    font-family: Eras, Roboto, "Helvetica Neue", sans-serif; 
+body {
+    margin: 0;
+    font-family: Eras, Roboto, "Helvetica Neue", sans-serif;
     text-rendering: optimizeLegibility;
 
     -webkit-font-smoothing: subpixel-antialiased;
@@ -94,16 +123,19 @@ body {
    -moz-osx-font-smoothing: grayscale;
    text-rendering: geometricPrecision;
 }
+h1{
+  text-align: right;
+}
 
 nav{
-    background: rgba(255,255,255, 0.5);
-    
+    background: rgba(255,255,255, 0.8);
+
    & > ul{
         margin: 0;
         padding: 1em;
         display: flex;
         justify-content: space-around;
-        width: 60%;
+        width: 100%;
     }
     & > ul li{
         list-style-type: none;
@@ -141,7 +173,7 @@ nav{
     }
 }
 
-@media screen and (orientation:landscape ) and (max-width:767px) { 
+@media screen and (orientation:landscape ) and (max-width:767px) {
     img{
         max-width: 30vw;
     }
@@ -190,7 +222,7 @@ nav.mnuAside ul{
 .mnuAside ul li{
     width: 100%;
     margin-top: 1rem;
-    
+
 }
 
 
@@ -200,3 +232,19 @@ nav.mnuAside ul{
     margin-top: -150px;
     position: absolute;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-snack-bar-container {
+    background: white;
+}
+
+
+.header{
+  width: 100%;
+  height: 35vh;
+}
+
+
+

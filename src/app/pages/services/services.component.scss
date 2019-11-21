@@ -1,3 +1,13 @@
+.header{
+  background-image: url("/assets/images/headers/servicios.png");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.mnuAside{
+  height: 30vh;
+  max-width:  100%;
+}
 .mnuAside ul{
     display: flex;
     flex-direction: column;
@@ -6,3 +16,7 @@
 .selected{
     border-bottom: 1px solid #06038D;
 }
+.boxMessage{
+    position: relative;
+}
+

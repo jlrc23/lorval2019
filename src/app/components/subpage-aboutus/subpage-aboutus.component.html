@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <!-- <div class="header">
+
+      </div>-->
+    </div>
+  </div>
+  <div class="row mt-3 main">
+    <div class="col-12 boxMessage ">
+      <h3>{{title}}</h3>
+      <div [innerHTML]="content"></div>
+
+      <button mat-flat-button style="float: right" color="primary"  class="pull-right" (click)="goBack()" >
+        <mat-icon aria-label="Go back">navigate_before</mat-icon> <span style="color: white; font-weight: bold">Regresar</span>
+      </button>
+
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-12">
+      <mnu-about-us (selected)="menuSelect($event)" ></mnu-about-us>
+    </div>
+  </div>
+</div>

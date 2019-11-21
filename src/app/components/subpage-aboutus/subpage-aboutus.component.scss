@@ -1,0 +1,17 @@
+.header{
+  background-image: url("/assets/images/headers/nosotros.png");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.boxMessage{
+  box-sizing: border-box;
+  margin-top: inherit;
+  position: relative;
+}
+div .mat-icon,  .mat-button-wrapper   {
+  color: white !important;
+}
+.main{
+  height: 70vh;
+}

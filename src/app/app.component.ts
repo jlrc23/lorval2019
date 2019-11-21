@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FullpageService} from './services/fullpage.service';
 
 @Component({
   selector: 'app-root',
@@ -7,19 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   config: any;
-  fullpage_api: any;
 
-  constructor() {
+  constructor(public fullpageService: FullpageService) {
     // for more details on config options please visit fullPage.js docs
     this.config = {
       // fullpage options
       licenseKey: 'F0C98BD8-1E5C4649-89CD41BD-6DB81FC1',
-      anchors: ['landing', 'home', 'aboutUs', 'services', 'contactUs'],
+      anchors: ['landing', 'home', 'aboutUs', 'services',  'clientes', 'contactUs'],
       menu: '#menu',
       // fullpage callbacks
       afterResize: () => {
         console.log("After resize");
       },
+      controlArrows: false,
       afterLoad: (origin, destination, direction) => {
         if(origin){
           console.log(origin.index);
@@ -29,6 +30,6 @@ export class AppComponent {
   }
 
   getRef(fullPageRef) {
-    this.fullpage_api = fullPageRef;
+    this.fullpageService.api = fullPageRef;
   }
 }

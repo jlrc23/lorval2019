@@ -6,18 +6,56 @@
 		<app-home></app-home>
 	</div>
 	<div class="section">
-		<app-about-us></app-about-us>
+    <app-about-us class="slide"></app-about-us>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <app-subpage-aboutus [option]="'mision'"></app-subpage-aboutus>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <app-subpage-aboutus [option]="'vision'"></app-subpage-aboutus>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <app-subpage-aboutus [option]="'politica'"></app-subpage-aboutus>
+      </div>
+    </div>
+
+
+
+
 	</div>
 	<div class="section">
-		<app-services></app-services>
+		<app-services class="slide"></app-services>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <!-- <app-subpage-estudios-proyectos></app-subpage-estudios-proyectos>-->
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <!-- <app-subpage-consultoria></app-subpage-consultoria> -->
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <!-- <app-subpage-coordinacion></app-subpage-coordinacion>-->
+      </div>
+    </div>
+    <div class="slide">
+      <div class="wrapperWatermark">
+        <!-- <app-subpage-ejecucion></app-subpage-ejecucion>-->
+      </div>
+    </div>
+  </div>
+  <div class="section">
+		<app-clientes></app-clientes>
 	</div>
 	<div class="section">
 		<app-contact-us></app-contact-us>
 	</div>
-	<!--<div class="section">
-		<div style="background-color: lightblue;" class="slide">Slide 2.1</div>
-		<div style="background-color: lightcyan;" class="slide">Slide 2.2</div>
-		<div style="background-color: lightgreen" class="slide">Slide 2.3</div>
-	</div>
-	<div class="section" (click)="fullpage_api.moveTo('home', 2)">Some section4</div>-->
+	
+
 </div>

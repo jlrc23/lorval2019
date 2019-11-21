@@ -1,0 +1,45 @@
+.gallery-wrapper{
+    display: grid;
+    grid-template-columns: 40px  1fr 40px;
+    align-items: center;
+}
+
+.gallery-wrapper div .mat-icon   {
+    color: white;
+
+   /* align-self: end;*/
+
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 15vw);
+    grid-gap: 5px;
+    align-items: center;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn{
+    cursor: pointer;
+}
+.gallery-wrapper div .mat-icon   {
+  color: white;
+
+  /* align-self: end;*/
+
+}
+
+.gallery  > figure > img{
+    cursor: pointer;
+    position: relative;
+    max-height: 150px;
+}
+
+.gallery  > figure:hover .img-thumbnail{
+    background-color: lightblue;
+
+}

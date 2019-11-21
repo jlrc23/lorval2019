@@ -1,0 +1,33 @@
+.header{
+  background-image: url("/assets/images/headers/clientes.png");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.clientes{
+  display: grid;
+  grid-template-columns: 5vw repeat(5, 1fr) 5vw;
+  grid-template-rows: repeat(3, 15vh);
+  grid-gap: 15px 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.clientes img {
+  max-height: 13vh;
+  width: auto;
+}
+.clientes img.cliente_termsa{
+  max-width: 220px;
+}
+
+.cliente_bancomer{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.cliente_7kat{
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

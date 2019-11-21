@@ -1,13 +1,13 @@
 <nav>
     <ul>
-      <li [ngClass]="{'selected': itemSelected=='mision'}" 
+      <li [ngClass]="{'selected': optionSelectedService.itemSelected=='mision'}"
         (click)="selectOption('mision')">
-        MISION
+        MISIÓN
       </li>
-      <li [ngClass]="{'selected': itemSelected=='vision'}" 
-      (click)="selectOption('vision')">VISION</li>
+      <li [ngClass]="{'selected': optionSelectedService.itemSelected=='vision'}"
+      (click)="selectOption('vision')">VISIÓN</li>
 
-      <li [ngClass]="{'selected': itemSelected=='politica'}" 
+      <li [ngClass]="{'selected': optionSelectedService.itemSelected=='politica'}"
       (click)="selectOption('politica')">POLÍTICA</li>
     </ul>
   </nav>
