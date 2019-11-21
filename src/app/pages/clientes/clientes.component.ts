@@ -7,25 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientesComponent implements OnInit {
   clientes = [
-    "",
     "fonatur",
     "conapesca",
     "mayapalace",
     "INIFED",
     "inah",
-    "",
-    "",
     "bancomer",
     "GMX",
     "shuffle",
     "termsa",
-    "",
-    "",
     "7kat",
     "rubau",
     "liconsa",
     "haltiall"
-
   ];
   constructor() { }
 

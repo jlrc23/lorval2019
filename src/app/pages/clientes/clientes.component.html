@@ -11,11 +11,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="clientes col-12" >
+      <div class="clientes" >
         <ng-container *ngFor="let cliente of clientes">
-          <span *ngIf="!cliente"></span>
-
-          <img *ngIf="cliente" src="/assets/images/clientes/{{cliente}}.png" title="{{cliente}}" class="cliente_{{cliente}}">
+          <img src="/assets/images/clientes/{{cliente}}.png" title="{{cliente}}" class="cliente_{{cliente}}">
         </ng-container>
       </div>
     </div>

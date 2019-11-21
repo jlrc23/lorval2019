@@ -6,8 +6,9 @@
 }
 
 .clientes{
+  margin: auto 12vw auto 12vw;
   display: grid;
-  grid-template-columns: 5vw repeat(5, 1fr) 5vw;
+  grid-template-columns:  repeat(5, 1fr) ;
   grid-template-rows: repeat(3, 15vh);
   grid-gap: 15px 10px;
   justify-items: center;
@@ -17,17 +18,42 @@
 .clientes img {
   max-height: 13vh;
   width: auto;
-}
-.clientes img.cliente_termsa{
-  max-width: 220px;
+  max-width: 19vw;
 }
 
 .cliente_bancomer{
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .cliente_7kat{
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@media (max-width: 500px) {
+  .clientes{
+    margin: auto 0 auto 0;
+    grid-template-columns:  repeat(4, 1fr) ;
+    grid-template-rows: repeat(5, 10vh);
+    grid-gap: 0px;
+    width: 100%;
+  }
+
+  .clientes img {
+    max-height: 10vh;
+    max-width: 20vw;
+  }
+  .cliente_bancomer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .cliente_7kat{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .cliente_inah{
+    display: none;
+  }
 }
