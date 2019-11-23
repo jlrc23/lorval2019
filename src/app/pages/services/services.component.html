@@ -13,9 +13,9 @@
         <div class="row">
           <aside class="col-12 col-md-5">
             <nav class="mnuAside" >
-                <ul class="">
+                <ul>
                     <li  [ngClass]="{'selected': selectedOption=='estudiosProyectos'}"
-                    (click)="select_option('estudios-proyectos')">
+                    (click)="select_option('estudiosProyectos')">
                       <a>Estudios y proyectos</a>
                     </li>
                     <li  [ngClass]="{'selected': selectedOption=='consultoria'}"
@@ -24,7 +24,7 @@
                     </li>
                     <li  [ngClass]="{'selected': selectedOption=='coordinacion'}"
                     (click)="select_option('coordinacion')">
-                      <a >Coordinación, supervisión y control de obras</a>
+                      <a >Coordinación y supervisión de obras</a>
                     </li>
                     <li  [ngClass]="{'selected': selectedOption=='ejecucion'}"
                     (click)="select_option('ejecucion')">
@@ -35,17 +35,21 @@
           </aside>
           <div class="col-7 d-none d-md-block" ngClass="{'d-block':selectedOption, 'd-none': !selectedOption}" [ngSwitch]="selectedOption">
               <div class="boxMessage" *ngSwitchCase="'estudiosProyectos'">
-                <app-subpage-estudios-proyectos></app-subpage-estudios-proyectos>
+                <h3>{{contents.estudiosProyectos.title}}</h3>
+                <div class="content" [innerHTML]="contents.estudiosProyectos.content"></div>
               </div>
               <div class="boxMessage" *ngSwitchCase="'consultoria'">
-                <app-subpage-consultoria></app-subpage-consultoria>
+                <h3>{{contents.consultoria.title}}</h3>
+                <div class="content" [innerHTML]="contents.consultoria.content"></div>
               </div>
               <div class="boxMessage" *ngSwitchCase="'coordinacion'">
-                <app-subpage-coordinacion></app-subpage-coordinacion>
+                <h3>{{contents.coordinacion.title}}</h3>
+                <div class="content" [innerHTML]="contents.coordinacion.content"></div>
               </div>
 
               <div class="boxMessage" *ngSwitchCase="'ejecucion'">
-                <app-subpage-ejecucion></app-subpage-ejecucion>
+                <h3>{{contents.ejecucion.title}}</h3>
+                <div class="content" [innerHTML]="contents.ejecucion.content"></div>
               </div>
 
 

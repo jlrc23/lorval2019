@@ -23,11 +23,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { PopupImageComponent } from './components/popup-image.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ClientesComponent } from './pages/clientes/clientes.component';
-import { SubpageEstudiosProyectosComponent } from './pages/services/subpages/subpage-estudios-proyectos/subpage-estudios-proyectos.component';
-import { SubpageConsultoriaComponent } from './pages/services/subpages/subpage-consultoria/subpage-consultoria.component';
-import { SubpageCoordinacionComponent } from './pages/services/subpages/subpage-coordinacion/subpage-coordinacion.component';
-import { SubpageEjecucionComponent } from './pages/services/subpages/subpage-ejecucion/subpage-ejecucion.component';
 import { SubpageAboutusComponent } from './components/subpage-aboutus/subpage-aboutus.component';
+import { SubpageServiceComponent } from './components/subpage-service/subpage-service.component';
 
 
 
@@ -46,11 +43,8 @@ import { SubpageAboutusComponent } from './components/subpage-aboutus/subpage-ab
     SimpleGalleryComponent,
     PopupImageComponent,
     ClientesComponent,
-    SubpageEstudiosProyectosComponent,
-    SubpageConsultoriaComponent,
-    SubpageCoordinacionComponent,
-    SubpageEjecucionComponent,
-    SubpageAboutusComponent
+    SubpageAboutusComponent,
+    SubpageServiceComponent
   ],
   imports: [
     BrowserModule,

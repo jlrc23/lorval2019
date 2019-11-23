@@ -31,6 +31,19 @@
   grid-column-end: 3;
 }
 
+.frase{
+  background-image: url("/assets/images/frases/frase_lyndon.png");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width:40vw;
+  height: 25vh;
+  position: absolute;
+  right: 20px;
+  top:50px;
+}
+
+
 @media (max-width: 500px) {
   .clientes{
     margin: auto 0 auto 0;
@@ -48,7 +61,7 @@
     grid-column-start: 1;
     grid-column-end: 2;
   }
-  
+
   .cliente_7kat{
     grid-column-start: 1;
     grid-column-end: 2;

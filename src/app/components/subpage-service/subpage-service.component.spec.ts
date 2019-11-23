@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubpageConsultoriaComponent } from './subpage-consultoria.component';
+import { SubpageServiceComponent } from './subpage-service.component';
 
-describe('SubpageConsultoriaComponent', () => {
-  let component: SubpageConsultoriaComponent;
-  let fixture: ComponentFixture<SubpageConsultoriaComponent>;
+describe('SubpageServiceComponent', () => {
+  let component: SubpageServiceComponent;
+  let fixture: ComponentFixture<SubpageServiceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubpageConsultoriaComponent ]
+      declarations: [ SubpageServiceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubpageConsultoriaComponent);
+    fixture = TestBed.createComponent(SubpageServiceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
