@@ -14,7 +14,7 @@
             Somos un grupo de profesionistas con larga experiencia y capacidad técnica en cada una de las áreas de la industria de la construcción de toda clase de obras de ingeniería y arquitectura, tanto en obras públicas como privadas
         </p>
       </div>
-      <div class="col-6 d-none d-md-block" [ngSwitch]="selectedOption">
+      <div class="col-md-7 d-none d-md-block" [ngSwitch]="selectedOption">
         <div class="boxMessage" *ngSwitchCase="'mision'">
           <h3>{{content.mision.title}}</h3>
           <div class="content" [innerHTML]="content.mision.content"></div>
