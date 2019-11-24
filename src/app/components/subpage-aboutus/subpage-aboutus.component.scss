@@ -13,5 +13,24 @@ div .mat-icon,  .mat-button-wrapper   {
   color: white !important;
 }
 .main{
-  height: 70vh;
+  height: 59vh;
 }
+
+.frase{
+  background-image: url("/assets/images/frases/frase_madreteresa.png");
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width:40vw;
+  height: 20vh;
+  position: absolute;
+  right: 20px;
+  bottom:0px;
+}
+
+@media (max-width: 580px) {
+  .frase{
+    width: 85%;
+  }
+}
+

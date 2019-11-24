@@ -15,15 +15,15 @@ export class AboutUsComponent implements OnInit {
   content = ABOUT_US_CONTENT;
 
 
-  constructor(public breakpointObserver: BreakpointObserver) {
-    breakpointObserver.observe(['(min-width: 500px)']).subscribe((state: BreakpointState) => {
+  constructor() {
+    /*breakpointObserver.observe(['(max-width: 500px)']).subscribe((state: BreakpointState) => {
       if (state.matches) {
         console.log('Viewport is 500px or over!');
         this.mnuAboutUs.selectOption(OptionsAboutUs.mision);
       } else {
         console.log('Viewport is getting smaller!');
       }
-    });
+    });*/
   }
 
   ngOnInit() {

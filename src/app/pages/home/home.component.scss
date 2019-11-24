@@ -1,10 +1,5 @@
 :host  {
     display: block;
-    background-image: url("/assets/images/marcaaguaweb1.png");
-    background-position-x: right;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -17,16 +12,11 @@ img.logoLorval{
 .slider1{
     background: url("/assets/images/imgPersona.jpg");
     background-repeat: no-repeat;
-
 }
-.slider2{
-    background: url("/assets/images/imgPlanos.jpg");
-    background-repeat: no-repeat;
 
-}
-.slider1, .slider2{
+.slider1,{
     background-repeat: no-repeat;
-    min-height: 33vh;
+    min-height: 35vh;
     background-position: center;
     background-size: cover;
 

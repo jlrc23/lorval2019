@@ -38,13 +38,21 @@
   background-repeat: no-repeat;
   width:50vw;
   height: 25vh;
-  position: absolute;
-  right: 20px;
-  top:50px;
+}
+.frase-box{
+  display: flex;
+  align-items: center;
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .frase-box{
+    position: absolute;
+    bottom: 0;
+  }
+  .frase{
+    width:100vw;
+  }
   .clientes{
     margin: auto 0 auto 0;
     grid-template-columns:  repeat(4, 1fr) ;

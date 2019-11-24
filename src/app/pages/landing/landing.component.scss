@@ -1,114 +1,63 @@
-main{
-    display: grid;
-    height: calc(100vh - 90px);
-    width:  calc(100vw - 60px);
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 0px;
+main {
+  display: grid;
+  height: calc(100vh - 90px);
+  padding: 10px auto 0 auto;
 }
-row{
+
+header {
+  background: #06038D;
+  height: 30px;
+  width: 100vw;
+}
+
+footer {
+  height: 60px;
+  background-image: url("images/footer.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.row {
   min-height: 15vh;
 }
-img.empresas{
-    background-color: white;
-}
-footer{
-    height: 60px;
-    background: url("images/footer.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+
+#logoICAAI {
+  max-height: calc((100vh - 120px) / 2);
+  max-width: 100%;
+  width: auto;
+  margin: auto;
 }
 
-header{
-    background: #06038D;
-    height: 30px;
-    width: 100vw;
+section.empresas img.empresa {
+  max-height: 14vh;
+  max-width: 100%;
+  width: auto;
 }
-
-
-#logoICAAI{
-    max-height: calc( (100vh - 120px) / 2);
-    max-width: 100%;
-    width: auto;
-    display: block;
-    margin: auto;
-    background:none;
-}
-.empresaPrincipal{
-    padding-bottom:40px;
-}
-section.empresas{
-    position:absolute;
-    bottom: 60px;
-    max-width: 95vw;
-    width: calc(100vw - 60px);
+.empresas .row{
+  margin-top: 3vh;
 }
 
 /* Portrait tablets and small desktops */
 @media (max-width: 900px) {
-
-    header{
-        height: 10px;
-    }
-    main{
-        padding-top: 2px;
-        padding-bottom: 0px;
-        height: calc(100vh - 30px);
-    }
-
-    col{
-        padding:30px 10px 0 10px;
-    }
-    footer{
-        height: 20px;
-        background: url("images/footer.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-    }
-
-    img.empresas{
-        max-width: 100vw;
-    }
-
+  header {
+    height: 10px;
+  }
+  main {
+    padding-top: 2px;
+    height: calc(100vh - 30px);
+  }
+  footer {
+    height: 20px;
+  }
 }
+
 @media (max-width: 580px) {
-    main{
-        background: none;
-    }
-    img.empresas{
-        width: 60%;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-
-    }
+  .empresas .row{
+    margin-top: 0;
+  }
+  .empresas img.empresa {
+    max-height: 10vh;
+    display: block;
+    margin: 10px auto auto;
+  }
 }
-/**
-
-
-
-
-
-section.empresas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-section.empresas div {
-}
-
-section.empresas div.top{
-    align-self: flex-start;
-    padding: 20px 60px;
-
-}
-
-
-section.empresas div.bottom{
-    align-self:  flex-end;
-    padding: 0px 60px 40px 60px;
-}
-
-**/

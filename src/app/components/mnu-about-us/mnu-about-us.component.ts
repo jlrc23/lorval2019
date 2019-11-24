@@ -19,11 +19,12 @@ export class MnuAboutUsComponent implements OnInit {
   constructor(public breakpointObserver: BreakpointObserver,
               public fullpageService: FullpageService,
               public optionSelectedService: OptionSelectedService) {
-    breakpointObserver.observe(['(min-width: 500px)']).subscribe((state: BreakpointState) => {
+    breakpointObserver.observe(['(max-width: 500px)']).subscribe((state: BreakpointState) => {
       if (state.matches) {
         console.log('Viewport is 500px or over!');
-      } else {
         this.enableSlide = true;
+      } else {
+        this.enableSlide = false;
       }
     });
   }

@@ -4,6 +4,9 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+.frase-box{
+  display: flex;
+}
 .frase{
   background-image: url("/assets/images/frases/frase_polaroid.png");
   background-size: 100% auto;
@@ -11,6 +14,14 @@
   background-repeat: no-repeat;
   width:40vw;
   height: 25vh;
-  position: relative;
-
+  margin-left: 4vw;
+}
+@media (max-width: 800px) {
+  .frase-box{
+    align-items: center;
+  }
+  .frase {
+    width: 100vw;
+    height: 11vh;
+  }
 }
