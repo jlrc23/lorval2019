@@ -1,7 +1,8 @@
 main {
   display: grid;
   height: calc(100vh - 90px);
-  padding: 10px auto 0 auto;
+  padding-top: 10px;
+  padding-bottom: 0;
 }
 
 header {
@@ -29,7 +30,7 @@ footer {
 }
 
 section.empresas img.empresa {
-  max-height: 14vh;
+  height: 14vh;
   max-width: 100%;
   width: auto;
 }
@@ -49,6 +50,7 @@ section.empresas img.empresa {
   footer {
     height: 20px;
   }
+
 }
 
 @media (max-width: 580px) {
