@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ImageInterface } from 'src/app/interfaces/image.interface';
 import { PopupImageComponent } from '../popup-image.component';
 import { MatDialog } from '@angular/material/dialog';
- 
+
 
 
 @Component({
@@ -20,16 +20,16 @@ export class SimpleGalleryComponent implements OnInit {
 
   pagina = 0;
 
-  
+
 
   constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
-    const ejecuciones = {1:6,2:5,3:3,4:6,5:7,6:6,7:2,8:4,9:4};
+    const ejecuciones = {0:18, 1:6,2:5,3:3,4:6,5:7,6:6,7:2,8:4,9:4};
     const baseNameImage = "image";
     const baseNameFolder = "ejecucion";
     let contadorFotos = 0;
-    for(let i = 1; i <= this.totalEjecuciones; i++){
+    for(let i = 0; i <= this.totalEjecuciones; i++){
       for(let j=1; j<= ejecuciones[i]; j++){
 
         this.ejecuciones.push({position: contadorFotos, folder:baseNameFolder+ this.pad(i, 2), image:baseNameImage + this.pad(j, 2) })
